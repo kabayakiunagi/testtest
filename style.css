@@ -1,15 +1,9 @@
+
+
+
 * {
 	margin: 0;
 	padding: 0;
-}
-.wrapper .crowd #front {
-	display: none;
-}
-.wrapper .crowd {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	margin: auto;
 }
 .wrapper {
 	width: 1000px;
@@ -713,53 +707,9 @@
 	animation: ImgAnime 5s linear 0s forwards;
 	z-index: -1;
 }
-.crowd .SImg {
-	background-image: url(images/crowd02.png)
-}
-.crowd .SImg {
-	width: 1000px;
-	height: 350px;
-	position: absolute;
-	color: transparent;
-	background-size: cover;
-	background-position: 50% 50%;
-	background-repeat: none;
-	opacity: 0;
-	z-index: 0;
-	-webkit-backface-visibility: hidden;
-	-webkit-animation: move 20s linear infinite 0s;
-	-moz-animation: move 20s linear infinite 0s;
-	-o-animation: move 20s linear infinite 0s;
-	-ms-animation: move 20s linear infinite 0s;
-	animation: move 20s linear infinite 0s;
-}
-/*///////////////////これがぶつかっている///////////////////*/
 
 
-@keyframes move {
-	0% {
-		opacity: 0;
-		animation-timing-function: ease-in;
-	}
-	10% {
-		opacity: 1;
-		transform: scale(1.05);
-		animation-timing-function: ease-out;
-	}
-	15% {
-		opacity: 1;
-		transform: scale(1.07);
-	}
-	20% {
-		opacity: 1;
-		transform: scale(10);
-	}
-	25% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 1 transform:scale(10);
-	}
+
 
 
 /*///////////////////家のアニメーション///////////////////*/
@@ -822,4 +772,40 @@
 		position: absolute;
 		top: -50px;
 		left: 400px;
+	}
+	
+	
+	/*///////////////////これがぶつかっている///////////////////*/
+
+
+.crowd .SImg {
+	background-image: url(images/crowd02.png);
+	width: 1000px;
+	height: 350px;
+	position: absolute;
+	color: transparent;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: none;
+	opacity: 0;
+	z-index: 0;
+	-webkit-backface-visibility: hidden;
+	-webkit-animation: move 20s linear infinite 0s;
+	-moz-animation: move 20s linear infinite 0s;
+	-o-animation: move 20s linear infinite 0s;
+	-ms-animation: move 20s linear infinite 0s;
+	animation: move 20s linear infinite 0s;
+}
+
+
+@keyframes move {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 1;
+		transform: scale(1.05);
+	}
+		100% {
+		opacity: 1 transform:scale(100);
 	}
