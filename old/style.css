@@ -1,0 +1,727 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.wrapper{
+ width:1000px;
+ height:1000px;
+ margin:auto;
+ position: relative;
+}
+
+
+.wrapper .logo {   
+ position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);
+  margin: auto;
+  z-index: 1;
+  font-size: 1rem;
+    color: #FFFFFF;
+}
+
+.frame {
+	position: fixed;
+	width: 1000px;
+	height: 1000px;
+  margin: auto;
+	background-image: url(image_blue.png);
+    background-repeat: no-repeat;
+   -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    -webkit-backface-visibility: hidden;
+    -webkit-animation: ImgAnime 5s linear  0s;
+    -moz-animation: ImgAnime 5s linear  0s;
+    -o-animation: ImgAnime 5s linear  0s;
+    -ms-animation: ImgAnime 5s linear  0s;
+    animation: ImgAnime 5s linear 0s;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  perspective: 600px;
+  animation: perspectiveShift 25s infinite linear;
+　　
+}
+
+
+.starHolder {
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(9000px);
+  animation: flyin infinite linear;
+}
+.starHolder:nth-child(1) {
+  top: 109vh;
+  left: 170vw;
+  animation-delay: 50ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(2) {
+  top: 199vh;
+  left: 176vw;
+  animation-delay: 100ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(3) {
+  top: 16vh;
+  left: 145vw;
+  animation-delay: 150ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(4) {
+  top: 116vh;
+  left: 160vw;
+  animation-delay: 200ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(5) {
+  top: 158vh;
+  left: -9vw;
+  animation-delay: 250ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(6) {
+  top: 184vh;
+  left: 0vw;
+  animation-delay: 300ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(7) {
+  top: -35vh;
+  left: 152vw;
+  animation-delay: 350ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(8) {
+  top: 115vh;
+  left: 112vw;
+  animation-delay: 400ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(9) {
+  top: 7vh;
+  left: -46vw;
+  animation-delay: 450ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(10) {
+  top: -35vh;
+  left: -34vw;
+  animation-delay: 500ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(11) {
+  top: -4vh;
+  left: 85vw;
+  animation-delay: 550ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(12) {
+  top: 141vh;
+  left: 136vw;
+  animation-delay: 600ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(13) {
+  top: 162vh;
+  left: 35vw;
+  animation-delay: 650ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(14) {
+  top: 89vh;
+  left: -2vw;
+  animation-delay: 700ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(15) {
+  top: 38vh;
+  left: 25vw;
+  animation-delay: 750ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(16) {
+  top: 56vh;
+  left: 117vw;
+  animation-delay: 800ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(17) {
+  top: -4vh;
+  left: -12vw;
+  animation-delay: 850ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(18) {
+  top: -43vh;
+  left: 160vw;
+  animation-delay: 900ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(19) {
+  top: 125vh;
+  left: 150vw;
+  animation-delay: 950ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(20) {
+  top: -40vh;
+  left: 134vw;
+  animation-delay: 1000ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(21) {
+  top: 2vh;
+  left: 164vw;
+  animation-delay: 1050ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(22) {
+  top: 95vh;
+  left: 152vw;
+  animation-delay: 1100ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(23) {
+  top: 97vh;
+  left: -45vw;
+  animation-delay: 1150ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(24) {
+  top: 14vh;
+  left: 29vw;
+  animation-delay: 1200ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(25) {
+  top: -10vh;
+  left: 17vw;
+  animation-delay: 1250ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(26) {
+  top: 8vh;
+  left: 150vw;
+  animation-delay: 1300ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(27) {
+  top: 125vh;
+  left: 157vw;
+  animation-delay: 1350ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(28) {
+  top: 23vh;
+  left: 6vw;
+  animation-delay: 1400ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(29) {
+  top: 165vh;
+  left: 169vw;
+  animation-delay: 1450ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(30) {
+  top: 188vh;
+  left: 1vw;
+  animation-delay: 1500ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(31) {
+  top: 146vh;
+  left: 35vw;
+  animation-delay: 1550ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(32) {
+  top: 83vh;
+  left: 131vw;
+  animation-delay: 1600ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(33) {
+  top: 66vh;
+  left: 93vw;
+  animation-delay: 1650ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(34) {
+  top: 134vh;
+  left: -15vw;
+  animation-delay: 1700ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(35) {
+  top: -42vh;
+  left: 94vw;
+  animation-delay: 1750ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(36) {
+  top: -7vh;
+  left: 181vw;
+  animation-delay: 1800ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(37) {
+  top: 166vh;
+  left: 172vw;
+  animation-delay: 1850ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(38) {
+  top: 173vh;
+  left: 5vw;
+  animation-delay: 1900ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(39) {
+  top: 45vh;
+  left: -38vw;
+  animation-delay: 1950ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(40) {
+  top: -37vh;
+  left: 29vw;
+  animation-delay: 2000ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(41) {
+  top: 79vh;
+  left: 57vw;
+  animation-delay: 2050ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(42) {
+  top: 68vh;
+  left: 154vw;
+  animation-delay: 2100ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(43) {
+  top: 182vh;
+  left: -48vw;
+  animation-delay: 2150ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(44) {
+  top: -28vh;
+  left: 1vw;
+  animation-delay: 2200ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(45) {
+  top: 152vh;
+  left: 179vw;
+  animation-delay: 2250ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(46) {
+  top: 103vh;
+  left: 32vw;
+  animation-delay: 2300ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(47) {
+  top: 67vh;
+  left: 88vw;
+  animation-delay: 2350ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(48) {
+  top: -15vh;
+  left: 71vw;
+  animation-delay: 2400ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(49) {
+  top: 150vh;
+  left: 180vw;
+  animation-delay: 2450ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(50) {
+  top: -32vh;
+  left: 132vw;
+  animation-delay: 2500ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(51) {
+  top: 14vh;
+  left: 76vw;
+  animation-delay: 2550ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(52) {
+  top: 198vh;
+  left: 180vw;
+  animation-delay: 2600ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(53) {
+  top: 138vh;
+  left: 38vw;
+  animation-delay: 2650ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(54) {
+  top: -22vh;
+  left: 41vw;
+  animation-delay: 2700ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(55) {
+  top: 21vh;
+  left: 172vw;
+  animation-delay: 2750ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(56) {
+  top: 151vh;
+  left: 119vw;
+  animation-delay: 2800ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(57) {
+  top: 156vh;
+  left: 111vw;
+  animation-delay: 2850ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(58) {
+  top: 110vh;
+  left: 164vw;
+  animation-delay: 2900ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(59) {
+  top: 62vh;
+  left: 45vw;
+  animation-delay: 2950ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(60) {
+  top: 68vh;
+  left: -42vw;
+  animation-delay: 3000ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(61) {
+  top: 104vh;
+  left: 5vw;
+  animation-delay: 3050ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(62) {
+  top: 165vh;
+  left: -20vw;
+  animation-delay: 3100ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(63) {
+  top: 68vh;
+  left: 105vw;
+  animation-delay: 3150ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(64) {
+  top: 4vh;
+  left: 33vw;
+  animation-delay: 3200ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(65) {
+  top: 108vh;
+  left: 199vw;
+  animation-delay: 3250ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(66) {
+  top: 149vh;
+  left: 173vw;
+  animation-delay: 3300ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(67) {
+  top: 144vh;
+  left: 70vw;
+  animation-delay: 3350ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(68) {
+  top: -32vh;
+  left: 121vw;
+  animation-delay: 3400ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(69) {
+  top: 183vh;
+  left: 57vw;
+  animation-delay: 3450ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(70) {
+  top: 76vh;
+  left: 2vw;
+  animation-delay: 3500ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(71) {
+  top: 90vh;
+  left: 22vw;
+  animation-delay: 3550ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(72) {
+  top: 75vh;
+  left: -9vw;
+  animation-delay: 3600ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(73) {
+  top: 129vh;
+  left: 195vw;
+  animation-delay: 3650ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(74) {
+  top: 131vh;
+  left: 147vw;
+  animation-delay: 3700ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(75) {
+  top: 102vh;
+  left: 49vw;
+  animation-delay: 3750ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(76) {
+  top: 196vh;
+  left: 19vw;
+  animation-delay: 3800ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(77) {
+  top: 29vh;
+  left: -34vw;
+  animation-delay: 3850ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(78) {
+  top: 184vh;
+  left: 48vw;
+  animation-delay: 3900ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(79) {
+  top: 23vh;
+  left: -2vw;
+  animation-delay: 3950ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(80) {
+  top: -38vh;
+  left: 178vw;
+  animation-delay: 4000ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(81) {
+  top: -1vh;
+  left: 53vw;
+  animation-delay: 4050ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(82) {
+  top: 101vh;
+  left: -10vw;
+  animation-delay: 4100ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(83) {
+  top: -21vh;
+  left: 11vw;
+  animation-delay: 4150ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(84) {
+  top: 122vh;
+  left: 189vw;
+  animation-delay: 4200ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(85) {
+  top: 58vh;
+  left: 125vw;
+  animation-delay: 4250ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(86) {
+  top: 98vh;
+  left: 62vw;
+  animation-delay: 4300ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(87) {
+  top: 63vh;
+  left: 9vw;
+  animation-delay: 4350ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(88) {
+  top: 15vh;
+  left: 46vw;
+  animation-delay: 4400ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(89) {
+  top: -15vh;
+  left: 101vw;
+  animation-delay: 4450ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(90) {
+  top: 116vh;
+  left: 59vw;
+  animation-delay: 4500ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(91) {
+  top: 122vh;
+  left: -15vw;
+  animation-delay: 4550ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(92) {
+  top: 107vh;
+  left: 126vw;
+  animation-delay: 4600ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(93) {
+  top: 169vh;
+  left: 30vw;
+  animation-delay: 4650ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(94) {
+  top: 184vh;
+  left: -7vw;
+  animation-delay: 4700ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(95) {
+  top: 28vh;
+  left: -45vw;
+  animation-delay: 4750ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(96) {
+  top: 112vh;
+  left: 155vw;
+  animation-delay: 4800ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(97) {
+  top: -41vh;
+  left: -29vw;
+  animation-delay: 4850ms;
+  animation-duration: 2s;
+}
+.starHolder:nth-child(98) {
+  top: -7vh;
+  left: -31vw;
+  animation-delay: 4900ms;
+  animation-duration: 3s;
+}
+.starHolder:nth-child(99) {
+  top: -22vh;
+  left: 48vw;
+  animation-delay: 4950ms;
+  animation-duration: 3s;
+}
+
+.star {
+  width: 200px;
+  height: 100px;
+  border-radius: 100px;
+ background-image: url(crowd.png);
+}
+.star .side-1 {
+  content: '';
+  position: absolute;
+  transform: rotateX(90deg);
+}
+.star .side-2 {
+  content: '';
+  position: absolute;
+  transform: rotateY(90deg);
+}
+
+@keyframes flyin {
+  0% {
+    transform: translateZ(-500px);
+  }
+  100% {
+    transform: translateZ(1200px);
+  }
+}
+@keyframes perspectiveShift {
+  0% {
+    perspective: 600px;
+  }
+  100% {
+    perspective: 0.6px;
+  }
+}
+
+@keyframes ImgAnime { 
+    0% {
+        opacity: 0;
+         transform: scale(1);
+    }
+    10% {
+        opacity: 0;
+         transform: scale(1);
+    }
+
+
+    100% { opacity: 1;
+    transform: scale(8);
+    }
+
+    
+    
+
+    
+    
+#canvas {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  
+  cursor: pointer;
+}
+
+#front,
+#canvas {
+  display: none;
+}
+
